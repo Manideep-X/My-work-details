@@ -1,11 +1,13 @@
 import './App.css'
+import CallToAction from './components/CallToAction'
+import Navbar from './components/Navbar'
 
 function App() {
 
   return (
     <main>
-      <h1 className='font-titles font-[700] text-7xl' >WE CREATE EYE-OPENING PRESENTATIONS</h1>
-      <p>This is a para</p>
+      <Navbar />
+      <CallToAction />
     </main>
   )
 }
