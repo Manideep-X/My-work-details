@@ -4,5 +4,9 @@
         "Creativity and Code",
         "with MERN & Java"
     ],
-    "message": "Full-Stack Developer | Passionate About Problem-Solving | Building Robust & Scalable Applications" 
+    "messages": [
+        "Full-Stack Developer |",
+        " Passionate About Problem-Solving |",
+        " Building Robust & Scalable Applications"
+    ] 
 }
