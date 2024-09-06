@@ -19,12 +19,12 @@ const Navbar = () => {
     `}>
         <a href="" className='w-60 block'><img src="./src/assets/icon3.png" alt="Work Projects" className='' /></a>
         <ul className='flex gap-[0.6vw] items-center'>
-            <li className='w-24 text-center border-b-[1.6px] border-[rgba(43,43,43,0)] hover:border-[rgba(43,43,43,0.8)] hover:tracking-widest active:font-semibold transition-all'>Home</li>
-            <li className='w-24 text-center border-b-[1.6px] border-[rgba(43,43,43,0)] hover:border-[rgba(43,43,43,0.8)] hover:tracking-widest active:font-semibold transition-all'>Projects</li>
-            <li className='w-24 text-center border-b-[1.6px] border-[rgba(43,43,43,0)] hover:border-[rgba(43,43,43,0.8)] hover:tracking-widest active:font-semibold transition-all'>About Me</li>
-            <li className='w-24 text-center border-b-[1.6px] border-[rgba(43,43,43,0)] hover:border-[rgba(43,43,43,0.8)] hover:tracking-widest active:font-semibold transition-all'>Résumé</li>
+            <li className='w-24 cursor-pointer text-center border-b-[1.6px] border-[rgba(43,43,43,0)] hover:border-[rgba(43,43,43,0.8)] hover:tracking-widest active:font-semibold transition-all'>Home</li>
+            <li className='w-24 cursor-pointer text-center border-b-[1.6px] border-[rgba(43,43,43,0)] hover:border-[rgba(43,43,43,0.8)] hover:tracking-widest active:font-semibold transition-all'>Projects</li>
+            <li className='w-24 cursor-pointer text-center border-b-[1.6px] border-[rgba(43,43,43,0)] hover:border-[rgba(43,43,43,0.8)] hover:tracking-widest active:font-semibold transition-all'>About Me</li>
+            <li className='w-24 cursor-pointer text-center border-b-[1.6px] border-[rgba(43,43,43,0)] hover:border-[rgba(43,43,43,0.8)] hover:tracking-widest active:font-semibold transition-all'>Résumé</li>
         </ul>
-        <li className='w-24 self-center list-none text-center border-b-[1.6px] border-[rgba(43,43,43,0)] hover:border-[rgba(43,43,43,0.8)] hover:tracking-widest active:font-semibold transition-all'>Contacts</li>
+        <li className='w-24 cursor-pointer self-center list-none text-center border-b-[1.6px] border-[rgba(43,43,43,0)] hover:border-[rgba(43,43,43,0.8)] hover:tracking-widest active:font-semibold transition-all'>Contacts</li>
     </nav>
   )
 }
