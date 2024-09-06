@@ -11,25 +11,25 @@ const CallToAction = () => {
       .then(response => response.json())
       .then(
         data => {
-        setInfo(data);
-        
-        setTimeout(() => {
-          data.titles.forEach((_, i) => {
-            setTimeout(() => {
-              setVisibleIndices(prev => [...prev, i]);
-            }, i * 200);
-          });
-        }, 500)
-        
-        setTimeout(() => {
-          data.messages.forEach((_, i) => {
-            setTimeout(() => {
-              setVisibleMsg(prev => [...prev, i]);
-            }, i * 500);
-          });
-        }, 1300)
-      
-      })
+          setInfo(data);
+
+          setTimeout(() => {
+            data.titles.forEach((_, i) => {
+              setTimeout(() => {
+                setVisibleIndices(prev => [...prev, i]);
+              }, i * 200);
+            });
+          }, 500)
+
+          setTimeout(() => {
+            data.messages.forEach((_, i) => {
+              setTimeout(() => {
+                setVisibleMsg(prev => [...prev, i]);
+              }, i * 400);
+            });
+          }, 1300)
+
+        })
       .catch(err => {
         console.error('There was a problem with the fetch operation : ', err);
       });
@@ -40,31 +40,56 @@ const CallToAction = () => {
   }
 
   return (
-    <section className='pt-[20.6vh] px-[4vw] h-screen'>
-        {info.titles.map((title, i) => (
-          <div key={i} className={`
-            text-nowrap overflow-hidden
-            transition-all duration-[1000ms] ease-slo-to-fast transform
-            ${ visibleIndices.includes(i) ? 'w-full' : 'w-2' }
+    <section className='pt-[24vh] h-screen'>
+      {info.titles.map((title, i) => (
+        <div key={i} className={`
+            text-nowrap overflow-hidden px-[4vw]
+            transition-all duration-1000 ease-slo-to-fast transform
+            ${visibleIndices.includes(i) ? 'w-full' : 'w-2'}
           `}>
-            <div className={`
+          <div className={`
                 font-titles font-[700] text-[6.5rem] uppercase leading-[0.85]
-                transition-all duration-1000 ease-in-out transform
-                ${ visibleIndices.includes(i) ? 'opacity-100' : 'opacity-0' }
+                transition-all duration-[1500ms] ease-in-out transform
+                ${visibleIndices.includes(i) ? 'opacity-100' : 'opacity-0'}
                 `} >{title}
-            </div>
           </div>
-        ))}
-        <div className='px-[1vw] py-[12vh]'>
+        </div>
+      ))}
+      <div className='flex py-[5vh] px-[5vw] mt-[14vh] justify-between border-t-[1.5px] border-[#b2b2b2]'>
+        <div className='content-center'>
           {info.messages.map((msg, j) => (
-            <p className={`
-              inline
+            <p key={j} className={`
+              inline text-lg
               transition-all duration-500 ease-in-out transform
-              ${ visibleMsg.includes(j) ? 'opacity-100' : 'opacity-0' }
+              ${visibleMsg.includes(j) ? 'opacity-100' : 'opacity-0'}
               `}>{msg}
             </p>
           ))}
         </div>
+        <div className={`
+            transition-all duration-300 ease-in-out transform
+            ${visibleMsg.includes(2) ? 'opacity-100' : 'opacity-0'}
+          `}>
+          <p className={`
+          uppercase px-3 py-1 border-2 rounded-full border-[rgb(43,43,43)]
+          hover:bg-[rgb(43,43,43)] hover:text-[#f1f1f1] cursor-pointer
+          transition-all duration-150
+          `}>
+            {info.intro}</p>
+        </div>
+      </div>
+      <a href="https://github.com/Manideep-X?tab=repositories" target='_blank' className={`
+        transition-all duration-300 ease-in-out transform
+        ${visibleMsg.includes(2) ? 'opacity-100' : 'opacity-0'}
+        `}>
+      <div className={`
+        fixed flex items-center justify-between bg-red-500 
+        w-[14%] px-4 py-3 pb-28 top-[28%] -right-32 -rotate-90
+        `}>
+        <p className='text-white'>See all projects in</p>
+        <img src="src/assets/github-mark-white.svg" alt="GitHub" className='w-8 rotate-90 pl-[0.8px]' />
+      </div>
+      </a>
     </section>
   )
 }
