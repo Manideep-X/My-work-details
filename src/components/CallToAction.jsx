@@ -41,9 +41,9 @@ const CallToAction = () => {
 
   return (
     <section className={`
-      pt-[24vh] h-screen
+      pt-[24vh]
       transition-all duration-300 ease-in-out
-      ${visibleMsg.includes(2) ? 'h-[93vh]' : ''}
+      ${visibleMsg.includes(2) ? 'h-[93vh]' : 'h-screen'}
     `}>
       {info.titles.map((title, i) => (
         <div key={i} className={`
