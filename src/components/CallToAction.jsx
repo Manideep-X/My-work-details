@@ -40,9 +40,9 @@ const CallToAction = () => {
   }
 
   return (
-    <section className={`
+    <section id='home' className={`
       pt-[24vh]
-      transition-all duration-300 ease-in-out
+      transition-all duration-500 ease-in-out
       ${visibleMsg.includes(2) ? 'h-[93vh]' : 'h-screen'}
     `}>
       {info.titles.map((title, i) => (
@@ -74,16 +74,16 @@ const CallToAction = () => {
             transition-all duration-300 ease-in-out transform
             ${visibleMsg.includes(2) ? 'opacity-100' : 'opacity-0'}
           `}>
-          <p className={`
+          <a href='#about-me' className={`text-center
             uppercase px-3 py-1 border-2 rounded-full border-[rgba(43,43,43,0.8)]
             hover:bg-[rgb(43,43,43)] hover:text-[#f1f1f1] cursor-pointer
             transition-all duration-200
           `}>
-            {info.intro}</p>
+            {info.intro}</a>
         </div>
       </div>
       <a href="https://github.com/Manideep-X?tab=repositories" target='_blank' className={`
-          transition-all duration-300 ease-in-out transform
+          transition-all duration-500 ease-in-out transform
           ${visibleMsg.includes(2) ? 'opacity-100' : 'opacity-0'}
         `}>
         <div className={`

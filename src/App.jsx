@@ -6,17 +6,21 @@ import Resume from './components/Resume'
 import Contacts from './components/Contacts'
 import AboutMe from './components/AboutMe'
 
+import { BrowserRouter } from 'react-router-dom'
+
 function App() {
 
   return (
-    <main>
-      <Navbar />
-      <CallToAction />
-      <AboutMe />
-      <Projects />
-      <Resume />
-      <Contacts />
-    </main>
+    <BrowserRouter>
+      <main>
+        <Navbar />
+        <CallToAction />
+        <AboutMe />
+        <Projects />
+        <Resume />
+        <Contacts />
+      </main>
+    </BrowserRouter>
   )
 }
 
