@@ -34,12 +34,22 @@ const Navbar = () => {
     `}>
         <a href="" className='w-60 block'><img src="./src/assets/icon3.png" alt="Work Projects" className='' /></a>
         <ul className='flex gap-[0.6vw] items-center'>
-            <li className='w-24 cursor-pointer text-center border-b-[1.6px] border-[rgba(43,43,43,0)] hover:border-[rgba(43,43,43,0.8)] hover:tracking-widest active:font-semibold transition-all duration-200 ease-[cubic-bezier(0.39, 0.58, 0.57, 1)]'>Home</li>
-            <li className='w-24 cursor-pointer text-center border-b-[1.6px] border-[rgba(43,43,43,0)] hover:border-[rgba(43,43,43,0.8)] hover:tracking-widest active:font-semibold transition-all duration-200 ease-[cubic-bezier(0.39, 0.58, 0.57, 1)]'>About Me</li>
-            <li className='w-24 cursor-pointer text-center border-b-[1.6px] border-[rgba(43,43,43,0)] hover:border-[rgba(43,43,43,0.8)] hover:tracking-widest active:font-semibold transition-all duration-200 ease-[cubic-bezier(0.39, 0.58, 0.57, 1)]'>Projects</li>
-            <li className='w-24 cursor-pointer text-center border-b-[1.6px] border-[rgba(43,43,43,0)] hover:border-[rgba(43,43,43,0.8)] hover:tracking-widest active:font-semibold transition-all duration-200 ease-[cubic-bezier(0.39, 0.58, 0.57, 1)]'>Résumé</li>
+            <a href="#home">
+              <li className='w-24 cursor-pointer text-center border-b-[1.6px] border-[rgba(43,43,43,0)] hover:border-[rgba(43,43,43,0.8)] hover:tracking-widest active:font-semibold transition-all duration-200 ease-[cubic-bezier(0.39, 0.58, 0.57, 1)]'>Home</li>
+            </a>
+            <a href='#about-me'>
+              <li className='w-24 cursor-pointer text-center border-b-[1.6px] border-[rgba(43,43,43,0)] hover:border-[rgba(43,43,43,0.8)] hover:tracking-widest active:font-semibold transition-all duration-200 ease-[cubic-bezier(0.39, 0.58, 0.57, 1)]'>About Me</li>
+            </a>
+            <a href="#projects">
+              <li className='w-24 cursor-pointer text-center border-b-[1.6px] border-[rgba(43,43,43,0)] hover:border-[rgba(43,43,43,0.8)] hover:tracking-widest active:font-semibold transition-all duration-200 ease-[cubic-bezier(0.39, 0.58, 0.57, 1)]'>Projects</li>
+            </a>
+            <a href="#resume">
+              <li className='w-24 cursor-pointer text-center border-b-[1.6px] border-[rgba(43,43,43,0)] hover:border-[rgba(43,43,43,0.8)] hover:tracking-widest active:font-semibold transition-all duration-200 ease-[cubic-bezier(0.39, 0.58, 0.57, 1)]'>Résumé</li>
+            </a>
         </ul>
-        <li className='w-24 cursor-pointer self-center list-none text-center border-b-[1.6px] border-[rgba(43,43,43,0)] hover:border-[rgba(43,43,43,0.8)] hover:tracking-widest active:font-semibold transition-all'>Contacts</li>
+        <a href="#contacts" className='w-24 cursor-pointer self-center list-none text-center border-b-[1.6px] border-[rgba(43,43,43,0)] hover:border-[rgba(43,43,43,0.8)] hover:tracking-widest active:font-semibold transition-all'>
+          Contacts
+        </a>
     </nav>
   )
 }
