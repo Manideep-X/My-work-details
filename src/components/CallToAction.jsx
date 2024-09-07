@@ -40,7 +40,11 @@ const CallToAction = () => {
   }
 
   return (
-    <section className='pt-[24vh] h-screen'>
+    <section className={`
+      pt-[24vh] h-screen
+      transition-all duration-300 ease-in-out
+      ${visibleMsg.includes(2) ? 'h-[93vh]' : ''}
+    `}>
       {info.titles.map((title, i) => (
         <div key={i} className={`
             text-nowrap overflow-hidden px-[4vw]
@@ -48,9 +52,9 @@ const CallToAction = () => {
             ${visibleIndices.includes(i) ? 'w-full' : 'w-2'}
           `}>
           <div className={`
-                font-titles font-[700] text-[6.5rem] uppercase leading-[0.85]
-                transition-all duration-[1500ms] ease-in-out transform
-                ${visibleIndices.includes(i) ? 'opacity-100' : 'opacity-0'}
+                  font-titles font-[700] text-[6.5rem] uppercase leading-[0.85]
+                  transition-all duration-[1500ms] ease-in-out transform
+                  ${visibleIndices.includes(i) ? 'opacity-100' : 'opacity-0'}
                 `} >{title}
           </div>
         </div>
@@ -59,9 +63,9 @@ const CallToAction = () => {
         <div className='content-center'>
           {info.messages.map((msg, j) => (
             <p key={j} className={`
-              inline text-lg
-              transition-all duration-500 ease-in-out transform
-              ${visibleMsg.includes(j) ? 'opacity-100' : 'opacity-0'}
+                inline text-[1rem]
+                transition-all duration-500 ease-in-out transform
+                ${visibleMsg.includes(j) ? 'opacity-100' : 'opacity-0'}
               `}>{msg}
             </p>
           ))}
@@ -71,24 +75,24 @@ const CallToAction = () => {
             ${visibleMsg.includes(2) ? 'opacity-100' : 'opacity-0'}
           `}>
           <p className={`
-          uppercase px-3 py-1 border-2 rounded-full border-[rgb(43,43,43)]
-          hover:bg-[rgb(43,43,43)] hover:text-[#f1f1f1] cursor-pointer
-          transition-all duration-150
+            uppercase px-3 py-1 border-2 rounded-full border-[rgba(43,43,43,0.8)]
+            hover:bg-[rgb(43,43,43)] hover:text-[#f1f1f1] cursor-pointer
+            transition-all duration-200
           `}>
             {info.intro}</p>
         </div>
       </div>
       <a href="https://github.com/Manideep-X?tab=repositories" target='_blank' className={`
-        transition-all duration-300 ease-in-out transform
-        ${visibleMsg.includes(2) ? 'opacity-100' : 'opacity-0'}
+          transition-all duration-300 ease-in-out transform
+          ${visibleMsg.includes(2) ? 'opacity-100' : 'opacity-0'}
         `}>
-      <div className={`
-        fixed flex items-center justify-between bg-red-500 
-        w-[14%] px-4 py-3 pb-28 top-[28%] -right-32 -rotate-90
+        <div className={`
+          fixed flex items-center justify-between bg-red-500 
+          w-52 px-4 py-3 pb-28 top-[28%] -right-32 -rotate-90
         `}>
-        <p className='text-white'>See all projects in</p>
-        <img src="src/assets/github-mark-white.svg" alt="GitHub" className='w-8 rotate-90 pl-[0.8px]' />
-      </div>
+          <p className='text-white'>See all projects in</p>
+          <img src="src/assets/github-mark-white.svg" alt="GitHub" className='w-8 rotate-90 pl-[0.8px]' />
+        </div>
       </a>
     </section>
   )

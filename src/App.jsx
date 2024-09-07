@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Projects from './components/Projects'
 import Resume from './components/Resume'
 import Contacts from './components/Contacts'
+import AboutMe from './components/AboutMe'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
     <main>
       <Navbar />
       <CallToAction />
+      <AboutMe />
       <Projects />
       <Resume />
       <Contacts />
