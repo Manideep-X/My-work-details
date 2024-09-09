@@ -74,7 +74,7 @@ const CallToAction = () => {
             transition-all duration-300 ease-in-out transform
             ${visibleMsg.includes(2) ? 'opacity-100' : 'opacity-0'}
           `}>
-          <a href='#about-me' className={`text-center
+          <a href='#about-me' className={`text-center block
             uppercase px-3 py-1 border-2 rounded-full border-[rgba(43,43,43,0.8)]
             hover:bg-[rgb(43,43,43)] hover:text-[#f1f1f1] cursor-pointer
             transition-all duration-200
@@ -88,7 +88,8 @@ const CallToAction = () => {
         `}>
         <div className={`
           fixed flex items-center justify-between bg-red-500 
-          w-52 px-4 py-3 pb-28 top-[28%] -right-32 -rotate-90
+          w-52 px-4 py-3 pb-28 top-[28%] -right-32 -rotate-90 hover:-right-28
+          transition-all duration-200 ease-in-out
         `}>
           <p className='text-white'>See all projects in</p>
           <img src="src/assets/github-mark-white.svg" alt="GitHub" className='w-8 rotate-90 pl-[0.8px]' />
