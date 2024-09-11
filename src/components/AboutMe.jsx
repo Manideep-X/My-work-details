@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutMe = () => {
   return (
-    <article id='about-me' className='bg-[rgb(205,234,104)] h-screen shadow-xl rounded-3xl px-[4vw] py-[10vh]'>
+    <article id='about-me' className='bg-[rgb(205,234,104)] h-screen shadow-[0px_40px_65px_-20px_rgba(0,0,0,0.45)] rounded-3xl px-[4vw] py-[10vh]'>
       This is about me section
     </article>
   )
