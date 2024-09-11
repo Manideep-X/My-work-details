@@ -88,6 +88,7 @@ const CallToAction = () => {
         `}>
         <div className={`
           fixed flex items-center justify-between bg-red-500 
+          shadow-[-5px_10px_18px_-4px_rgba(0,0,0,0.45)]
           w-52 px-4 py-3 pb-28 top-[28%] -right-32 -rotate-90 hover:-right-28
           transition-all duration-200 ease-in-out
         `}>
