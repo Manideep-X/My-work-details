@@ -26,7 +26,7 @@ const Navbar = () => {
   }, [lastScrollY]);
 
   return (
-    <nav className={`
+    <nav className={`select-none
     fixed backdrop-blur-sm bg-[rgba(241,241,241,0.3)] w-full z-50
     grid grid-cols-[48%_42%_10%] justify-between py-[1.3vh] px-[4vw]
     transition-all duration-700 ease-in-out transform -translate-y-full
