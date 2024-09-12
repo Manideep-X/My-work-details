@@ -41,7 +41,7 @@ const CallToAction = () => {
 
   return (
     <section id='home' className={`
-      pt-[24vh]
+      pt-[24vh] select-none
       transition-all duration-500 ease-in-out
       ${visibleMsg.includes(2) ? 'h-[93vh]' : 'h-screen'}
     `}>
