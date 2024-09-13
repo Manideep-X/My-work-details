@@ -52,18 +52,19 @@ const CallToAction = () => {
             ${visibleIndices.includes(i) ? 'w-full' : 'w-2'}
           `}>
           <div className={`
-                  font-titles font-[700] text-[6.5rem] uppercase leading-[0.85]
+                  lg:text-[6.5rem] md:text-[5.5rem] sm:text-[4.5rem] text-[2.6rem] 
+                  font-titles sm:font-[700] font-[700] uppercase leading-[0.85]
                   transition-all duration-[1500ms] ease-in-out transform
                   ${visibleIndices.includes(i) ? 'opacity-100' : 'opacity-0'}
                 `} >{title}
           </div>
         </div>
       ))}
-      <div className='flex py-[5vh] px-[5vw] mt-[14vh] justify-between border-t-[1.5px] border-[#b2b2b2]'>
+      <div className='md:flex block py-[5vh] px-[5vw] mt-[14vh] justify-between border-t-[1.5px] border-[#b2b2b2]'>
         <div className='content-center'>
           {info.messages.map((msg, j) => (
             <p key={j} className={`
-                inline text-[1rem]
+                md:inline block text-[1rem]
                 transition-all duration-500 ease-in-out transform
                 ${visibleMsg.includes(j) ? 'opacity-100' : 'opacity-0'}
               `}>{msg}
@@ -87,7 +88,7 @@ const CallToAction = () => {
           ${visibleMsg.includes(2) ? 'opacity-100' : 'opacity-0'}
         `}>
         <div className={`
-          fixed flex items-center justify-between bg-red-500 
+          fixed hidden sm:flex items-center justify-between bg-red-500 
           shadow-[-5px_10px_18px_-4px_rgba(0,0,0,0.45)]
           w-52 px-4 py-3 pb-28 top-[28%] -right-32 -rotate-90 hover:-right-28
           transition-all duration-200 ease-in-out
