@@ -73,7 +73,7 @@ const CallToAction = () => {
           transition-all duration-200 ease-in-out
         `}>
           <p className='text-white'>See all projects in</p>
-          <img src="src/assets/github-mark-white.svg" alt="GitHub" className='w-7 pl-[0.8px]' />
+          <img src="src/assets/github-mark-white.svg" alt="GitHub" className='w-7' />
         </div>
       </a>
       <div className='md:flex block py-[5vh] px-[5vw] md:mt-[14vh] mt-[16vh] justify-between border-t-[1.5px] border-[#b2b2b2]'>
@@ -91,8 +91,9 @@ const CallToAction = () => {
             transition-all duration-300 ease-in-out transform
             ${visibleMsg.includes(2) ? 'opacity-100' : 'opacity-0'}
           `}>
-          <a href='#about-me' className={`text-center md:block sm:text-base text-[0.8rem]
-            uppercase px-3 py-1 md:border-2 border-[1px] rounded-full border-[rgba(43,43,43,0.8)]
+          <a href='#about-me' className={`text-center md:block sm:text-base text-[0.9rem]
+            sm:font-normal font-light uppercase px-3 py-1 md:border-2 
+            border-[1px] rounded-full border-[rgba(43,43,43,0.8)]
             hover:bg-[rgb(43,43,43)] hover:text-[#f1f1f1] cursor-pointer
             transition-all duration-200
           `}>
