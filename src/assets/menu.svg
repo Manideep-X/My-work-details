@@ -1,9 +1,1 @@
-<svg fill="#2b2b2b" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" stroke="#2b2b2b" stroke-width="5.12">
-
-<g id="SVGRepo_bgCarrier" stroke-width="0"/>
-
-<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-
-<g id="SVGRepo_iconCarrier"> <g> <g> <path d="M0,0v237.268h237.268V0H0z M199.805,199.805H37.463V37.463h162.341V199.805z"/> </g> </g> <g> <g> <path d="M274.732,0v237.268H512V0H274.732z M474.537,199.805H312.195V37.463h162.341V199.805z"/> </g> </g> <g> <g> <path d="M0,274.732V512h237.268V274.732H0z M199.805,474.537H37.463V312.195h162.341V474.537z"/> </g> </g> <g> <g> <path d="M274.732,274.732V512H512V274.732H274.732z M474.537,474.537H312.195V312.195h162.341V474.537z"/> </g> </g> </g>
-
-</svg>
+<svg class="svg-icon" style="width: 1em;height: 1em;vertical-align: middle;fill: #2b2b2b;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M399.7696 126.976v272.7936H126.976V126.976h272.7936m65.536-65.536H61.44v403.8656h403.8656V61.44zM897.024 126.976v272.7936H624.2304V126.976H897.024m65.536-65.536H558.6944v403.8656H962.56V61.44zM399.7696 624.2304V897.024H126.976V624.2304h272.7936m65.536-65.536H61.44V962.56h403.8656V558.6944zM897.024 624.2304V897.024H624.2304V624.2304H897.024m65.536-65.536H558.6944V962.56H962.56V558.6944z"  /></svg>

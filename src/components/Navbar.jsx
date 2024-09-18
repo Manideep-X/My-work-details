@@ -64,7 +64,7 @@ const Navbar = () => {
     `}>
       <div className='flex lg:block justify-between items-center z-[70]'>
         <a href="" className='md:w-60 s:w-48 w-44 block'><img src="./src/assets/icon3.png" alt="Work Projects" /></a>
-        <img ref={navBtnRef} src="./src/assets/menu.svg" alt="Menu" onClick={e => menuClick(e)} className='lg:hidden md:w-10 w-8 pr-1 self-center transition-all duration-700 ease-in-out opacity-80' />
+        <img ref={navBtnRef} src="./src/assets/menu.svg" alt="Menu" onClick={e => menuClick(e)} className='lg:hidden md:w-11 w-9 pr-1 self-center transition-all duration-700 ease-in-out opacity-80' />
       </div>
       <ul className='flex lg:flex-row flex-col lg:p-0 pt-6 pl-6 gap-[0.6vw] lg:items-center'>
         <a href="#home" className=''>
