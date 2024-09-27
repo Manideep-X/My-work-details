@@ -62,17 +62,19 @@ const CallToAction = () => {
         </div>
       ))}
       <a href="https://github.com/Manideep-X?tab=repositories" target='_blank' className={`
-          sm:hidden transition-all duration-500 ease-in-out transform w-[55%]
+          sm:hidden transition-all rounded-full
+          duration-500 ease-in-out transform w-[55%]
           ${visibleMsg.includes(2) ? 'opacity-100' : 'opacity-0'}
         `}>
         <div className={`
-          text-[0.86rem]
-          flex items-center justify-between bg-red-500 
-          shadow-[-5px_10px_18px_-4px_rgba(0,0,0,0.45)]
-          ml-[5.5vw] mt-4 w-[52%] px-4 py-[0.6rem]
+          text-[0.9rem] rounded-full
+          flex items-center justify-between bg-red-500
+          bg-[linear-gradient(rgb(255,0,0),rgb(245,0,0),rgb(240,0,0),rgb(235,0,0),rgb(190,0,0))]
+          shadow-[-7px_13px_25px_-4px_rgba(0,0,0,0.45)]
+          ml-[5.5vw] mt-4 w-[52%] px-6 py-[0.9rem]
           transition-all duration-200 ease-in-out
         `}>
-          <p className='text-white'>See all projects in</p>
+          <p className='text-white font-titles font-bold text-base'>See all projects in</p>
           <img src="src/assets/github-mark-white.svg" alt="GitHub" className='w-7' />
         </div>
       </a>
