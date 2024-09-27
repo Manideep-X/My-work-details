@@ -43,7 +43,7 @@ const CallToAction = () => {
     <section id='home' className={`
       md:pt-[24vh] pt-[15vh] select-none
       transition-all duration-500 ease-in-out
-      ${visibleMsg.includes(2) ? 'h-[93vh]' : 'h-screen'}
+      ${visibleMsg.includes(2) ? 'sm:h-[93vh] h-[87vh]' : 'sm:h-screen h-screen'}
     `}>
       {info.titles.map((title, i) => (
         <div key={i} className={`
@@ -63,26 +63,26 @@ const CallToAction = () => {
       ))}
       <a href="https://github.com/Manideep-X?tab=repositories" target='_blank' className={`
           sm:hidden transition-all rounded-full
-          duration-500 ease-in-out transform w-[55%]
-          ${visibleMsg.includes(2) ? 'opacity-100' : 'opacity-0'}
+          duration-700 ease-in-out transform w-[55%]
+          ${visibleMsg.includes(0) ? 'opacity-100' : 'opacity-0'}
         `}>
         <div className={`
-          text-[0.9rem] rounded-full
+          text-[0.9rem] rounded-full overflow-hidden
           flex items-center justify-between bg-red-500
-          bg-[linear-gradient(rgb(255,0,0),rgb(245,0,0),rgb(240,0,0),rgb(235,0,0),rgb(190,0,0))]
+          bg-[linear-gradient(195deg,rgb(255,200,200),rgb(255,100,100),rgb(240,10,10),rgb(220,0,0),rgb(180,0,0))]
           shadow-[-7px_13px_25px_-4px_rgba(0,0,0,0.45)]
-          ml-[5.5vw] mt-4 w-[52%] px-6 py-[0.9rem]
+          ml-[5.5vw] mt-4 sm:w-[200px] w-[190px] px-[24px] py-[16px]
           transition-all duration-200 ease-in-out
         `}>
-          <p className='text-white font-titles font-bold text-base'>See all projects in</p>
+          <p className='text-white font-titles font-bold text-base overflow-hidden'>See all projects in</p>
           <img src="src/assets/github-mark-white.svg" alt="GitHub" className='w-7' />
         </div>
       </a>
-      <div className='md:flex block py-[5vh] px-[5vw] md:mt-[14vh] mt-[16vh] justify-between border-t-[1.5px] border-[#b2b2b2]'>
+      <div className='md:flex block py-[5vh] px-[5vw] md:mt-[14vh] sm:mt-[16vh] mt-[14vh] justify-between border-t-[1.5px] border-[#b2b2b2]'>
         <div className='content-center'>
           {info.messages.map((msg, j) => (
             <p key={j} className={`
-                md:inline block sm:text-[1rem] text-[0.9rem] md:py-0 py-2
+                md:inline block sm:text-[1rem] text-[0.9rem] md:py-0 sm:py-2 py-1
                 transition-all duration-500 ease-in-out transform
                 ${visibleMsg.includes(j) ? 'opacity-100' : 'opacity-0'}
               `}>{msg}
@@ -93,7 +93,7 @@ const CallToAction = () => {
             transition-all duration-300 ease-in-out transform
             ${visibleMsg.includes(2) ? 'opacity-100' : 'opacity-0'}
           `}>
-          <a href='#about-me' className={`text-center md:block sm:text-base text-[0.9rem]
+          <a href='#about-me' className={`text-center md:block sm:text-base text-[17px]
             sm:font-normal font-light uppercase px-3 py-1 md:border-2 
             border-[1px] rounded-full border-[rgba(43,43,43,0.8)]
             hover:bg-[rgb(43,43,43)] hover:text-[#f1f1f1] cursor-pointer
