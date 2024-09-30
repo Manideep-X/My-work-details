@@ -69,20 +69,23 @@ const CallToAction = () => {
         <div className={`
           text-[0.9rem] rounded-full overflow-hidden
           flex items-center justify-between bg-red-500
-          bg-[linear-gradient(195deg,rgb(255,200,200),rgb(255,100,100),rgb(240,10,10),rgb(220,0,0),rgb(180,0,0))]
+          bg-[linear-gradient(195deg,rgb(239,190,190),rgb(239,100,100),rgb(239,55,55),rgb(239,50,50),rgb(201,45,45))]
           shadow-[-7px_13px_25px_-4px_rgba(0,0,0,0.45)]
-          ml-[5.5vw] mt-4 sm:w-[200px] w-[190px] px-[24px] py-[16px]
+          ml-[5.5vw] mt-4 w-[205px] px-[24px] py-[15px]
           transition-all duration-200 ease-in-out
         `}>
-          <p className='text-white font-titles font-bold text-base overflow-hidden'>See all projects in</p>
+          <p className='text-white font-medium overflow-hidden'>See all projects in</p>
           <img src="src/assets/github-mark-white.svg" alt="GitHub" className='w-7' />
         </div>
       </a>
-      <div className='md:flex block py-[5vh] px-[5vw] md:mt-[14vh] sm:mt-[16vh] mt-[14vh] justify-between border-t-[1.5px] border-[#b2b2b2]'>
+      <div className={`md:flex block py-[3vh] px-[5vw] md:mt-[14vh] sm:mt-[16vh] mt-[14vh] justify-between 
+      border-t-[1.5px] transition-all ease-in-out duration-700
+      ${visibleMsg.includes(0) ? 'border-[#b2b2b2]' : 'border-[#b2b2b200]'}
+      `}>
         <div className='content-center'>
           {info.messages.map((msg, j) => (
             <p key={j} className={`
-                md:inline block sm:text-[1rem] text-[0.9rem] md:py-0 sm:py-2 py-1
+                md:inline block sm:text-[1rem] text-[0.9rem] md:py-0 sm:py-2 py-[0.3rem]
                 transition-all duration-500 ease-in-out transform
                 ${visibleMsg.includes(j) ? 'opacity-100' : 'opacity-0'}
               `}>{msg}
