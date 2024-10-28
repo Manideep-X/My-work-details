@@ -12,7 +12,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <main>
+      <main className='dark:bg-[#1a1a1a] dark:text-[#e1e1e1]'>
         <Navbar />
         <CallToAction />
         <AboutMe />
