@@ -67,19 +67,21 @@ const CallToAction = () => {
           ${visibleMsg.includes(0) ? 'opacity-100' : 'opacity-0'}
         `}>
         <div className={`
-          text-[0.9rem] rounded-full overflow-hidden
+          text-[0.9rem] rounded-md overflow-hidden
           flex items-center justify-between bg-red-500
-          bg-[linear-gradient(195deg,rgb(239,190,190),rgb(239,100,100),rgb(239,55,55),rgb(239,50,50),rgb(201,45,45))]
+          bg-[linear-gradient(200deg,rgb(239,190,190),rgb(239,100,100),rgb(239,55,55),rgb(239,50,50),rgb(201,45,45))]
           shadow-[-7px_13px_25px_-4px_rgba(0,0,0,0.45)]
-          ml-[5.5vw] mt-4 w-[205px] px-[24px] py-[15px]
+          dark:bg-[linear-gradient(200deg,rgb(192,107,107),rgb(172,69,69),rgb(150,30,30),rgb(132,27,27),rgb(95,16,16))]
+          dark:shadow-[-6px_10px_20px_4px_rgba(0,0,0,0.45)]
+          ml-[5.5vw] mt-4 w-[203px] px-[22px] py-[12px]
           transition-all duration-200 ease-in-out
         `}>
           <p className='text-white font-medium overflow-hidden'>See all projects in</p>
           <img src="src/assets/github-mark-white.svg" alt="GitHub" className='w-7' />
         </div>
       </a>
-      <div className={`md:flex block py-[3vh] px-[5vw] md:mt-[14vh] sm:mt-[16vh] mt-[14vh] justify-between 
-      border-t-[1.5px] transition-all ease-in-out duration-700
+      <div className={`md:flex block py-[5vh] px-[5vw] md:mt-[14vh] sm:mt-[16vh] mt-[14vh] justify-between 
+      border-t-[1.5px] dark:border-t-[1px] transition-all ease-in-out duration-700
       ${visibleMsg.includes(0) ? 'border-[#b2b2b2]' : 'border-[#b2b2b200]'}
       `}>
         <div className='content-center'>
@@ -100,6 +102,8 @@ const CallToAction = () => {
             sm:font-normal font-light uppercase px-3 py-1 md:border-2 
             border-[1px] rounded-full border-[rgba(43,43,43,0.8)]
             hover:bg-[rgb(43,43,43)] hover:text-[#f1f1f1] cursor-pointer
+            dark:border-[rgb(225,225,225)] dark:hover:bg-[rgb(225,225,225)]
+            dark:hover:text-[#1a1a1a] dark:hover:font-[500]
             transition-all duration-200
           `}>
             {info.intro}</a>
@@ -110,7 +114,7 @@ const CallToAction = () => {
           ${visibleMsg.includes(2) ? 'opacity-100' : 'opacity-0'}
         `}>
         <div className={`
-          fixed hidden sm:flex items-center justify-between bg-red-500 
+          fixed hidden sm:flex items-center justify-between bg-red-500 dark:bg-[#961e1e]
           shadow-[-5px_10px_18px_-4px_rgba(0,0,0,0.45)]
           w-52 px-4 py-3 pb-28 top-[28%] -right-32 -rotate-90 hover:-right-28
           transition-all duration-200 ease-in-out
