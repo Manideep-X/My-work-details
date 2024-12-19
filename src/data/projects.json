@@ -1,0 +1,17 @@
+{
+    "Project 1":{
+        "Name": "name",
+        "Description": ["des","des"],
+        "Technologies used": ["tech","stack"]
+    },
+    "Project 2":{
+        "Name": "name",
+        "Description": ["des","des"],
+        "Technologies used": ["tech","stack"]
+    },
+    "Project 3":{
+        "Name": "name",
+        "Description": ["des","des"],
+        "Technologies used": ["tech","stack"]
+    }
+}
