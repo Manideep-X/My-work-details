@@ -1,11 +1,24 @@
 {
+    "Introduction": "Hello, I'm Manideep Bhattacharyya, a Software Developer specializing in AI/ML and Cryptography",
     "Education":{
-        "Btech": {
+        "M.Tech": {
+            "University": "name",
+            "CGPA": "number upto"
+        },
+        "B.Tech": {
             "University": "MCKV Institute of Engineering",
             "CGPA": "9.23"
-        },
-        "Mtech": {
-
         }
-    }
+    },
+    "Key Skills":{
+        "Frontend": ["HTML/CSS/JS","React.js","Tailwind"],
+        "Backend": ["Springboot","Node.js"],
+        "Tools": ["Git","Github"]
+    },
+    "Certifications":{
+        "Version Control by Meta": "https://www.coursera.org/account/accomplishments/verify/XMVZ76EA3CAA",
+        "Meta Frontend Developer": "https://www.coursera.org/account/accomplishments/professional-cert/ETNHCZWGUBX4"
+    },
+    "Resume": "https://",
+    "Photo": "https://"
 }
